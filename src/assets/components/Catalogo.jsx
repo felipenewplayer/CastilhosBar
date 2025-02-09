@@ -4,7 +4,7 @@ import { Burguer } from "./Burguer"
 export const Catalago = ({ burguers }) => {
     return (
         <section>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex justify-center">
                 {burguers.map((burguer) => <Burguer
                     key={burguer.id}
                     nome={burguer.nome}
