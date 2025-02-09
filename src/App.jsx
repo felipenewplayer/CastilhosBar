@@ -47,7 +47,7 @@ function App() {
   return (
 
     <div className="w-full h-full  bg-black font-primary">
-      <div>
+      <div className="w-full max-w-[375px] mx-auto sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px]">
       <Banner/> 
       <Catalago burguers = {burguer}/>
     </div>
