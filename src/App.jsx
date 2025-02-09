@@ -1,6 +1,6 @@
 import './App.css'
-import { Banner } from './assets/compoents/Banner'
-import { Catalago } from './assets/compoents/Catalogo'
+import { Banner } from './assets/components/Banner'
+import { Catalago } from './assets/components/Catalogo'
 
 function App() {
 
