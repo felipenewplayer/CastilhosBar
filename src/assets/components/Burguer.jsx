@@ -1,4 +1,3 @@
-
 export const Burguer = (burguers) => {
     return (
         <div className="bg-gray-900/30  m-10 p-10 rounded-3xl h-120 w-120 flex flex-col justify-between ">
@@ -8,7 +7,6 @@ export const Burguer = (burguers) => {
             <div>
                 <img className="h-76 w-250 rounded-2xl" src= "/img/burger.jpg" alt="cheese" />
             </div>
-
         </div>
     )
 }
