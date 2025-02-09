@@ -6,7 +6,7 @@ export const Burguer = (burguers) => {
             <p className="text-white text-2xl">{burguers.descricao}</p>
             <p className="text-white text-2xl">{burguers.price}</p>
             <div>
-                <img className="h-76 w-300 rounded-2xl" src= "../../../public/img/burger.jpg" alt="cheese" />
+                <img className="h-76 w-300 rounded-2xl" src= "/img/burger.jpg" alt="cheese" />
             </div>
 
         </div>
