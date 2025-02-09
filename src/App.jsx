@@ -12,49 +12,7 @@ function App() {
     { id: 6, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
   ];
 
-<<<<<<< HEAD
-=======
-  const burguer=([
-    {
-      id: 1,
-      nome: "HamburguerX",
-      descricao: "Queijo mussarela, salada, cheedar, bacon",
-       price:29.99
-    },
-    {
-      id: 2,
-      nome: "HamburguerX",
-      descricao: "Queijo mussarela, salada, cheedar, bacon",
-      price:29.99
-    },
-    {
-      id: 3,
-      nome: "HamburguerX",
-      descricao: "Queijo mussarela, salada, cheedar, bacon",
-      price:29.99
-    },
-    {
-      id: 4,
-      nome: "HamburguerX",
-      descricao: "Queijo mussarela, salada, cheedar, bacon",
-      price: 29.99
-    },
-    {
-      id: 5,
-      nome: "HamburguerX",
-      descricao: "Queijo mussarela, salada, cheedar, bacon",
-      price:29.99
-    },
-    {
-      id: 6,
-      nome: "HamburguerX",
-      descricao: "Queijo mussarela, salada, cheedar, bacon",
-      price:29.99
-    },
-  ])
 
-  
->>>>>>> 4b376c0e9c13010fa227cfa36ea85f480023ade9
   return (
     <div className="w-full h-full bg-black font-primary">
       <Banner />
