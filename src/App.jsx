@@ -1,23 +1,27 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Banner } from './assets/components/Banner';
 import { Catalago } from './assets/components/Catalogo';
+import axios from 'axios';
 
 function App() {
-  const burguer = [
-    { id: 1, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
-    { id: 2, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
-    { id: 3, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
-    { id: 4, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
-    { id: 5, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
-    { id: 6, nome: "HamburguerX", descricao: "4 queijos, salada, cheedar, bacon", price: 29.99 },
-  ];
+  const [burguer, setBurguer] = useState([])
 
+ useEffect(() => {
+    axios.get("http://localhost:8080/burguer")
+        .then(response => {
+          setBurguer(response.data);
+        })
+        .catch(error => {
+          alert("Erro fecthing" + error);
+        })
+  }, [])
 
   return (
-    <div className="w-full h-full bg-black font-primary">
+    <div className="w-full h-screen bg-black font-primary">
       <Banner />
-      <div className="w-full mx-auto max-w-[375px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1000px]">
-        <Catalago burguers={burguer} />
+      <div className="w-full mx-auto px-4">
+        <Catalago burguer={burguer} />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export const LoginPage = () => {
             <div
                 className=" bg-black/10 flex justify-around w-180 m-10 rounded-2xl flex-col items-center border border-gray-500 md:{max-w-xs} md:{max-h-xs}  ">
                 <h1
-                    className="m-10 sm:max-sm:text-[20px] flex items-center text-5xl text-white/90 ">Que bom que você voltou</h1>
+                    className="m-10 sm:max-sm:text-[20px] flex items-center text-5xl text-white/90 ">Que bom que você voltou !!</h1>
                 <form
                     className=" w-full h-100 flex flex-col justify-center ">
                     <label

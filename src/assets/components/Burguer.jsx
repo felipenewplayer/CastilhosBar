@@ -1,15 +1,31 @@
 /* eslint-disable react/prop-types */
 
-export const Burguer = ({ nome, descricao, price }) => (
-  <div className="bg-gray-900/30 m-4 p-4 sm:m-10 sm:p-10 rounded-3xl flex flex-col justify-between max-w-xs w-full">
-    <p className="text-white text-xl sm:text-3xl p-2">{nome}</p>
-    <p className="text-white text-base sm:text-2xl">{descricao}</p>
-    <p className="text-white text-base sm:text-2xl">{price}</p>
-    <div>
-      <img className="w-full h-auto rounded-2xl" src="/img/burger.jpg" alt="cheese" />
-    </div>
-  </div>
-);
-  
+import { Paragraph } from "./Paragraph"
+
+export const Burguer = ({ name, descricao, price }) => {
+
+
+  return (
+    <div className="transition-transform transform hover:scale-110 duration-500 border border-gray-50/50 rounded-2xl mr-2 ">
+      <h1 className="text-white sm:text-3xl m-5 text-center">{name}</h1>
+      <Paragraph >{descricao}</Paragraph>
+      <Paragraph>{price}</Paragraph>
+
+      <a
+        className=" text-white text-2xl " href="#">
+        <button
+          className="bg-green-500/70 rounded-[6px] w-[120px] pt-3 pb-3 ml-2 transition duration-400 hover:bg-green-400/70 cursor-pointer">Pedir
+        </button>
+      </a>
+
+      <div>
+        <img className="w-full h-[340px] rounded-b-3xl" src="/img/burger.jpg" alt="cheese" />
+      </div>
+    </div >)
+}
+
+
+
+
 
 
