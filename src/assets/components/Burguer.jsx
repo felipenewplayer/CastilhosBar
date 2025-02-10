@@ -6,8 +6,8 @@ export const Burguer = ({ name, descricao, price }) => {
 
 
   return (
-    <div className="transition-transform transform hover:scale-110 duration-500 border border-gray-50/50 rounded-2xl mr-2 ">
-      <h1 className="text-white sm:text-3xl m-5 text-center">{name}</h1>
+    <div className="transition-transform transform hover:scale-110 duration-500 border border-gray-50/50 rounded-2xl mr-2 m-6">
+      <h1 className="text-white text-2xl sm:text-3xl m-5 text-center">{name}</h1>
       <Paragraph >{descricao}</Paragraph>
       <Paragraph>{price}</Paragraph>
 

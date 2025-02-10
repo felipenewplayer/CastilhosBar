@@ -7,22 +7,20 @@ import axios from 'axios';
 function App() {
   const [burguer, setBurguer] = useState([])
 
- useEffect(() => {
+  useEffect(() => {
     axios.get("https://apicastilhobar-production.up.railway.app/")
-        .then(response => {
-          setBurguer(response.data);
-        })
-        .catch(error => {
-          alert("Erro fecthing" + error);
-        })
+      .then(response => {
+        setBurguer(response.data);
+      })
+      .catch(error => {
+        alert("Erro fecthing" + error);
+      })
   }, [])
 
   return (
     <div className="w-full h-screen bg-black font-primary">
       <Banner />
-      <div className="w-full mx-auto px-4">
-        <Catalago burguer={burguer} />
-      </div>
+      <Catalago burguer={burguer} />
     </div>
   );
 }

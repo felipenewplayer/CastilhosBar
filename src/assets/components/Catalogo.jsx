@@ -2,9 +2,8 @@
 import { Burguer } from "./Burguer";
 
 export const Catalago = ({ burguer }) => {
-  return (
-    <div className="w-full flex flex-wrap ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-75 mt-10 mb-10 ">
+  return (  
+    <div className="flex flex-wrap justify-center md:justify-center md:flex-wrap lg:flex-wrap  lg:justify-center ml-10">
       {burguer.map((burguer) => (
         <Burguer
           key={burguer.id}
@@ -13,6 +12,7 @@ export const Catalago = ({ burguer }) => {
           price={`R$ ${burguer.price}`}
         />
       ))}
-    </div>
-      </div >
-  );}
+
+    </div >
+  );
+}
