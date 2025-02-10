@@ -8,7 +8,7 @@ function App() {
   const [burguer, setBurguer] = useState([])
 
  useEffect(() => {
-    axios.get("http://localhost:8080/burguer")
+    axios.get("https://apicastilhobar-production.up.railway.app/")
         .then(response => {
           setBurguer(response.data);
         })
