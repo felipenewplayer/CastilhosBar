@@ -8,19 +8,23 @@ function App() {
   const [burguer, setBurguer] = useState([])
 
   useEffect(() => {
-    axios.get("https://apicastilhobar-production.up.railway.app/")
+    axios.get("http://localhost:8080/")
       .then(response => {
         setBurguer(response.data);
       })
       .catch(error => {
+       
         alert("Erro fecthing" + error);
       })
   }, [])
 
   return (
-    <div className="w-full h-screen bg-black font-primary">
+    <div className=" bg-black font-primary">
       <Banner />
-      <Catalago burguer={burguer} />
+      <div className="w-full">
+        <Catalago burguer={burguer}
+      /></div>
+
     </div>
   );
 }
