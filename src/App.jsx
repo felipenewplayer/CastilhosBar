@@ -8,7 +8,7 @@ function App() {
   const [burguer, setBurguer] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:8080/")
+    axios.get("https://apicastilhobar.onrender.com/")
       .then(response => {
         setBurguer(response.data);
       })
