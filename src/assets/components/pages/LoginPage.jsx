@@ -8,24 +8,24 @@ export const LoginPage = () => {
             <div
                 className=" bg-black/10 flex justify-around w-180 rounded-2xl flex-col items-center border border-gray-500 md:{max-w-xs} md:{max-h-xs} m-10 p-4 ">
                 <h1
-                    className="flex items-center text-2xl text-white/90 mt-4 sm:text-5xl">Que bom que você voltou!!</h1>
+                    className="flex items-center text-xl text-white/90 mt-10 sm:text-5xl">Que bom que você voltou!!</h1>
                 <form
                     className=" w-full h-100 flex flex-col justify-center mt-10">
                     <label
                         className="flex justify-center ">
                         <User
-                            className="w-10 h-10 mr-10 bg-amber-50/50 rounded-2xl p-0.7" />
+                            className="w-10 h-10 mr-10 p-2 bg-amber-50/50 rounded-2xl p-0.7" />
                         <Input
                             type="text"
-                            placeholder="Digite seu nome" />
+                            placeholder="Digite seu nome..." />
                     </label>
                     <label
                         className="flex justify-center ">
                         <KeyRound
-                            className="w-10 h-10 mr-10 bg-amber-50/50 rounded-2xl " />
+                            className="w-10 h-10 mr-10 p-2 bg-amber-50/50 rounded-2xl " />
                         <Input
                             type="text"
-                            placeholder="Digite sua senha" />
+                            placeholder="Digite sua senha..." />
                     </label>
 
                 </form>

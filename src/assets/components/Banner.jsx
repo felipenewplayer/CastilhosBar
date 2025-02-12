@@ -1,5 +1,6 @@
 import { Link } from "./Link";
 import { Login } from "./Login";
+import { SignUp } from "./SignUp";
 
 export const Banner = () => {
     return (
@@ -8,19 +9,20 @@ export const Banner = () => {
                 <Link href="#">Menu</Link>
                 <Link href="#">Sobre</Link>
                 <Link href="#">Castilhos Bar</Link>
-                <div className="sm:flex-row">
-                    <a className= ""href="#"><img className="
+                <div className="sm:flex-row ">
+                    <a href="#"><img className="
                     w-[20px]
                     sm:w-[30px]
-                    2xl:w-[30px]" src="/img/instagram.png" alt="" /></a>
+                    2xl:w-[30px]" src="/img/instagram.png" alt="instagram" /></a>
                 <p
                  className= "text-orange-500/80 text-xl sm:text-1xl   transition duration-700 ease-linear hover:text-orange-500/80 cursor-pointer ">Contatos
                 </p>
                 </div>
 
             </div>
-            <div className="mt-4 sm:mt-0">
+            <div className="mt-4 sm:mt-0 flex flex-col">
                 <Login />
+                <SignUp/>
             </div>
         </div>
     );

@@ -19,6 +19,7 @@ function App() {
   }, [])
 
   return (
+    
     <div className=" bg-black font-primary">
       <Banner />
       <div className="w-full">
