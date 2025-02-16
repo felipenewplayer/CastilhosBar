@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { CarrinhoContext } from "../context/CarrinhoContext"
+import { CarrinhoContext } from "../context/ContextApi"
 
 export const CarrinhoPanel = () =>{
     const{carrinho, showCart, setShowCart} = useContext(CarrinhoContext);

@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { Burguer } from "./Burguer";
-import { CarrinhoContext } from "../context/CarrinhoContext";
+import { GloabalContext } from "../context/GloabalContext";
 
 export const Catalago = ({ burguer }) => {
-  const { carrinho, setCarrinho, showCart, setShowCart } = useContext(CarrinhoContext);
+  const { carrinho, setCarrinho, showCart, setShowCart } = useContext(GloabalContext);
 
   function addBuguer(novoProduto) {
     console.log(novoProduto);
@@ -38,10 +38,15 @@ export const Catalago = ({ burguer }) => {
   }
 
   return (
-    <div className="w-full flex justify-center flex-wrap sm:w-full sm-justify-center md:w-full md:justify-center lg:flex-wrap lg:justify-center xl:flex-wrap xl:justify-center xl:w-full 2xl:flex-wrap 2xl:justify-center 2xl:h-full">
+    <div className="w-full flex justify-center flex-wrap 
+    sm:w-full sm-justify-center
+     md:w-full md:justify-center 
+     lg:flex-wrap lg:justify-center xl:flex-wrap 
+     xl:justify-center xl:w-full 
+     2xl:flex-wrap 2xl:justify-center 2xl:h-full">
       {burguer.map((burguer) => (
         <div
-          className="transition-transform transform hover:scale-103 duration-500 border border-gray-50/50 rounded-2xl m-10 cursor-pointer"
+          className="transition-transform transform hover:scale-103 duration-500 border border-gray-50/50 rounded-2xl m-5 cursor-pointer"
           key={burguer.id}
         >
           <Burguer
@@ -62,8 +67,6 @@ export const Catalago = ({ burguer }) => {
           />
         </div>
       ))}
-
-      {/* Exibindo o painel de carrinho */}
       {showCart && (
         <div
           className="fixed right-0 top-0 w-1/3 bg-gray-800 text-white p-4"

@@ -5,9 +5,11 @@ import { useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import {z} from "zod";
-import { useState } from "react"
+import { useContext } from "react"
+import { GloabalContext } from "../../context/GloabalContext"
 export const SignUpPage = () => {
-    const[isUserSignedUp, setIsUserSignedUp] = useState(false);
+    const {setUser} = useContext(GloabalContext);
+
     const signUpSchema = z.object({
       name: z.string().min(1, { message: "O nome é obrigatório" }),
       email: z.string().email({ message: "Email inválido" }),
@@ -22,7 +24,7 @@ export const SignUpPage = () => {
     const onSubmit = async (data) => {
         try {
             await axios.post("http://localhost:8080/signUp", data);
-            setIsUserSignedUp(true);
+            setUser({ nome: data.name, email: data.email }); 
             alert("Cadastro realizado com sucesso!");
             navigate('/');
         }
@@ -31,15 +33,7 @@ export const SignUpPage = () => {
         }
     };
 
-    const handleLogout = () => {
-        setIsUserSignedUp(false); 
-        navigate("/");
-      };
-
-      if(isUserSignedUp){
-            
-      }
-
+  
     return (
         <section
             className="w-screen h-screen bg-black/95 flex justify-center sm:flex-row ">

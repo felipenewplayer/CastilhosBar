@@ -4,7 +4,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { LoginPage } from './assets/components/pages/LoginPage.jsx'
 import { SignUpPage } from './assets/components/pages/SignUpPage.jsx'
-import { CarrinhoProvider } from './assets/context/CarrinhoContext.jsx'
+import { ContextProvider } from './assets/context/GloabalContext.jsx'
 
 const router = createBrowserRouter(
     [
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
 
 )
 createRoot(document.getElementById('root')).render(
-    <CarrinhoProvider>
+    <ContextProvider>
         <RouterProvider router={router} />
-    </CarrinhoProvider>
+    </ContextProvider>
 )
