@@ -8,7 +8,7 @@ function App() {
   const [burguer, setBurguer] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:8080/")
+    axios.get("https://castilhos-9k8g5x1g2-felipenewplayers-projects.vercel.app/")
       .then(response => {
         setBurguer(response.data);
       })
