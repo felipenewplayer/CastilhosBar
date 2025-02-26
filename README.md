@@ -1,8 +1,6 @@
 # 🛠️ CastilhosBar
 
-![React](https://img.shields.io/badge/React-18-blue) 
-
-Um projeto atualmente em andamento, frontend feito no react.
+Site de vendas de Hambuguer, com page de cadastro. login, e pedido.
 
 ---
 
