@@ -1,6 +1,6 @@
 # 🛠️ CastilhosBar
 
-Site de vendas de Hambuguer, com page de cadastro. login, e pedido.
+Site de vendas de Hamburguer, com page de cadastro. login, e pedido.
 
 ---
 
