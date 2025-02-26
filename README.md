@@ -8,6 +8,8 @@ Um projeto atualmente em andamento, frontend feito no react.
 
 ## 📌 Tecnologias Utilizadas
 
-- 🔵 **React 18** - Frontend SPA
+-  **React 18** - Frontend SPA
+-  **SpringBoot** - BackEnd
+-  **Mysql** - Banco de Dados
 
 
