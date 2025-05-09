@@ -2,7 +2,7 @@
 
 Site de vendas de Hamburguer, com page de cadastro. login, e pedido.
 
-### Aceso ao site:  https://castilhos-ej6vycbei-felipenewplayers-projects.vercel.app/
+### Aceso ao site:  https://castilhosbar.netlify.app/
 
 ## 📌 Tecnologias Utilizadas
 
