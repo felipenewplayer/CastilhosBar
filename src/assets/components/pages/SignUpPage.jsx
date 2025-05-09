@@ -24,7 +24,7 @@ export const SignUpPage = () => {
 
     const onSubmit = async (data) => {
         try {
-            await axios.post("https://https://apicastilhobar-3.onrender.com/signUp", data);
+            await axios.post("https://apicastilhobar-3.onrender.com/signUp", data);
             setUser({ nome: data.name, email: data.email }); 
             alert("Cadastro realizado com sucesso!");
             navigate('/');
